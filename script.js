@@ -61,5 +61,14 @@ var autoJoinPolicy = 'tab_and_origin_scoped';
                  }
 
                  
+/**
+ * launch app and request session
+ */
+                 function launchApp() {
+                 console.log("launching app...");
+                 appendMessage("launching app...");
+                 chrome.cast.requestSession(onRequestSessionSuccess, onLaunchError);
+                 }
+               
                  
 });

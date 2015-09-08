@@ -91,7 +91,7 @@
 								</li>
 								<li class="icon fa-code">
 									<h3>Lots of languages</h3>
-									<p id="lang-chart"></p>
+									<p id="lang-chart"></p><p id="tooltip"></p>
 								</li>
 								<li class="icon fa-gears">
 									<h3>Data Preprocessing</h3>
@@ -199,7 +199,7 @@
           .value(function(d) { return d.count; })
           .sort(null);
 
-        var tooltip = d3.select('#lang-chart')
+        var tooltip = d3.select('#tooltip')
           .append('div')
           .attr('class', 'tooltip');
         

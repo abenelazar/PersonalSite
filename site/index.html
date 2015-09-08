@@ -1,53 +1,164 @@
 <!DOCTYPE HTML>
 <!--
-	Aerial by HTML5 UP
+	Spectral by HTML5 UP
 	html5up.net | @n33co
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
 	<head>
-		<title>Aerial by HTML5 UP</title>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
-		<script src="js/skel.min.js"></script>
-		<script src="js/init.js"></script>
-		<noscript>
-			<link rel="stylesheet" href="css/skel.css" />
-			<link rel="stylesheet" href="css/style.css" />
-			<link rel="stylesheet" href="css/style-wide.css" />
-			<link rel="stylesheet" href="css/style-noscript.css" />
-		</noscript>
-		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+		<title>Ari's Personal Page</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
-	<body class="loading">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header">
-						<h1>Ari Ben-Elazar</h1>
-						<p>Web Developer Guru &nbsp;&bull;&nbsp;  &nbsp;&bull;&nbsp; Caffiene Addict </p>
-						<nav>
+					<header id="header" class="alt">
+						<h1><a href="index.html">Ari Ben-Elazar</a></h1>
+						<nav id="nav">
 							<ul>
-								<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
-								<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">About Me</a></li>
+											<li><a href="elements.html">Github</a></li>
+											<li><a href="#" onclick="modal(contactInfo)">Contact</a></li>
+										</ul>
+									</div>
+								</li>
 							</ul>
 						</nav>
 					</header>
 
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Ari Ben-Elazar</h2>
+							<p>Software Engineer<br />
+							Data Lover<br/>
+							<h4>Brandeis '16</h4><br/>
+							<ul class="actions">
+								<li><a href="#overview" class="scrolly button special">Learn More</a></li>
+							</ul>
+						</div>
+						<a href="#overview" class="more scrolly"></a>
+					</section>
+
+				<!-- One -->
+					<section id="overview" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2>CS, Stats, Econ. I got that covered.</h2>
+								<p>It's important to be well-rounded, right?</p>
+								<p>Check out some of my <a href="projects.html">projects</a></p>
+							</header>
+							<ul class="icons major">
+								<li><span class="icon fa-code major style3"><span class="label">Dolor</span></span></li>
+								<li><span class="icon fa-bar-chart major style1"><span class="label">Lorem</span></span></li>
+								<li><span class="icon fa-bank major style2"><span class="label">Ipsum</span></span></li>
+							</ul>
+							<p>Notice how I don't mention design ;)</p>
+						</div>
+					</section>
+ 
+				<!-- Three -->
+					<section id="skills" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>Skill Breakdown</h2>
+								<p>As you'd expect, it's a mix of software and data.</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane-o">
+									<h3>Software Design</h3>
+									<p>If this isn't listed first, something's off. What makes code good code? Recyclability and reusability. I've seen a good bit of it, and taught it as a <a href="javascript:modal(java);">Java TA</a>.</p>
+								</li>
+								<li class="icon fa-laptop">
+									<h3>Data Cleaning</h3>
+									<p>Regex, Regex, Regex. Throw some Python magic on it and we're good to go. Some cool things can be found <a href="https://www.github.com/abenelazar">here</a>.</p>
+								</li>
+								<li class="icon fa-code">
+									<h3>Lots of languages</h3>
+									<p>Java, Golang, Python, ***chart pls.</p>
+								</li>
+								<li class="icon fa-headphones">
+									<h3>Data Preprocessing</h3>
+									<p>Imputing Techniques, One-Hot Encoding, Outlier Detection, and beyond. If it's in sklearn, chances are I worked with it.</p>
+								</li>
+								<li class="icon fa-money">
+									<h3>Finance</h3>
+									<p>Bonds, Options, and so on. This is great when it comes to programming financial applications.</p>
+								</li>
+								<li class="icon fa-flag-o">
+									<h3>Probability</h3>
+									<p>INSERT FUNNY PROBABILITY EQUATION.</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/pic01.jpg" alt="" /></div><div class="content">
+								<h2>About me</h2>
+								<p>I enjoy reading the news, music, occassional trips to the rock climbing gym, and playing lots of chess. Lots of chess.</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic02.jpg" alt="" /></div><div class="content">
+								<h2>Things I think are cool</h2>
+								<p></p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/pic03.jpg" alt="" /></div><div class="content">
+								<h2>Goals as of last edit</h2>
+								<p>> Get a job</p>
+							</div>
+						</section>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>Keep in touch?</h2>
+								<p>I'll make that easy for you.</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="mailto:abenel@brandeis.edu" style="background-color:teal;" class="button fit">Email</a></li>
+								<li><a href="https://linkedin.com/in/abenelazar" style="background-color:#007bb6;" class="button fit">LinkedIn</a></li>
+							</ul>
+						</div>
+					</section>
+
 				<!-- Footer -->
 					<footer id="footer">
-						<span class="copyright">&copy; Ari Ben-Elazar </a>.</span>
+						<ul class="copyright">
+							<li>&copy; Ari Ben-Elazar</li>
+						</ul>
 					</footer>
+
 			</div>
-		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
 	</body>
 </html>

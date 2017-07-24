@@ -428,3 +428,50 @@ li {
   list-style-type: none;
 }
 
+a.option {
+  transition: all .3s linear;
+}
+
+a.option:hover {
+    text-shadow: 0 0 5px;
+    letter-spacing: 14px;
+    opacity: 0.6;
+}
+
+.options {
+  z-index: 1001;
+  height: 35%;
+  font-family: 'Dosis', 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  letter-spacing: 7px;
+  text-align: center;
+  opacity: 0;  
+    /* Centering with flexbox */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  animation: cssAnimation 1s ease-in 6s forwards;
+
+}

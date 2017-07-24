@@ -243,6 +243,21 @@ a:hover {
   }
 }
 
+#nav-expander {
+    opacity: 0;
+    animation: cssAnimation 1s ease-in 5s forwards;
+}
+
+@keyframes cssAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
 a.nav-expander {
   background: none repeat scroll 0 0 #000000;
   color: #FFFFFF;

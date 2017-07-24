@@ -1,3 +1,2 @@
-A Pen created at CodePen.io. You can find this one at http://codepen.io/anon/pen/owOeby.
+ARI'S PERSONAL SITE
 
- 'Opening sequence' text effect.

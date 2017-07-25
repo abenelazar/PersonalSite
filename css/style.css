@@ -422,6 +422,7 @@ body.nav-expanded {
   float: right;
   margin: 0.1em 0.8em -0.1em 0;
   opacity: 1;
+  display: flex;
 }
 
 li {
@@ -453,7 +454,7 @@ a.option:hover {
   left: 0;
   letter-spacing: 7px;
   text-align: center;
-  opacity: 0;  
+  opacity: 0;  w
     /* Centering with flexbox */
   display: -webkit-box;
   display: -moz-box;

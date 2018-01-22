@@ -1,68 +1,92 @@
 <!DOCTYPE html>
-<html >
+<html>
+
 <head>
-  <meta charset="UTF-8">
-  <title>A good software engineer | Ari Ben-Elazar</title>
-  <script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
-  <script type="text/javascript" src="/navgoco/src/jquery.cookie.js"></script>
-  <script type="text/javascript" src="/navgoco/src/jquery.navgoco.js"></script>
-  <link rel="stylesheet" href="/navgoco/src/jquery.navgoco.css" type="text/css" media="screen" />
-
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<meta name="description" content="Text Opening Sequence with CSS Animations" />
-
-  
-  
-      <link rel="stylesheet" href="css/style.css">
-
-  
+	<meta charset="UTF-8">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Text Opening Sequence with CSS Animations" />
+	<title>One size fits all | Ari Ben-Elazar</title>
+	<script src="https://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script>
+	<script type="text/javascript" src="/navgoco/src/jquery.cookie.js"></script>
+	<script type="text/javascript" src="/navgoco/src/jquery.navgoco.js"></script>
+	<link rel="stylesheet" href="/navgoco/src/jquery.navgoco.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<style>
+		#about-section {
+			display: none;
+		}
+	</style>
 </head>
 
 <body>
-<nav>
-  <ul class="list-unstyled main-menu">
-    <li><a href="dev.html">DEV WORK<span class="icon"></span></a></li>
-    <li><a href="education.html">EDU WORK<span class="icon"></span></a></li>
-    <li><a href="freelance.html">FREELANCE<span class="icon"></span></a></li>
-  </ul>
-</nav>
+	<nav>
+		<ul class="list-unstyled main-menu">
+			<li>
+				<a href="dev.html">DEV WORK
+					<span class="icon"></span>
+				</a>
+			</li>
+			<li>
+				<a href="education.html">EDU WORK
+					<span class="icon"></span>
+				</a>
+			</li>
+			<li>
+				<a href="freelance.html">FREELANCE
+					<span class="icon"></span>
+				</a>
+			</li>
+		</ul>
+	</nav>
 
-<div class="navbar navbar-inverse navbar-fixed-top">      
+	<div class="navbar navbar-inverse navbar-fixed-top">
 
-    <!--Include your brand here-->
-    <div class="navbar-header pull-right">
-      <a id="nav-expander" class="nav-expander fixed">
-        Menu
-      </a>
-    </div>
-</div>
+		<!--Include your brand here-->
+		<div class="navbar-header pull-right">
+			<a id="nav-expander" class="nav-expander fixed">
+				Menu
+			</a>
+		</div>
+	</div>
 
-		<div class="container">	
-			<div class="options">
-			<a class="option" href="#about" onclick="document.getElementById('info').innerHTML='// Brandeis Grad </br> // Popular online tutor </br> // Avid <a href=\'https://www.chess.com/member/abenel\'>Chess</a> Player';">
-				&nbspABOUT | 
-
+	<div class="container">
+		<div class="options">
+			<a class="option" href="#about" id="about">
+				&nbsp ABOUT |
 			</a>
 			<a class="option" href="resume.html">
-				&nbspRESUME |
+				&nbsp RESUME|
 			</a>
 			<a class="option" href="#contact">
-				&nbspCONTACT
+				&nbsp CONTACT
 			</a>
-			</div>
+		</div>
 
-			<div class="os-phrases" id="os-phrases">
-				<h2>// Developer </h2>
-				<h2>Ari Ben-Elazar</h2>
-				<h2 id="info" class="info">Pardon the dust, we'll be on in a bit.<br/></h2>
-			</div>
-		</div><!-- /container -->
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script>
+		<div class="os-phrases" id="os-phrases">
+			<h2>// Developer </h2>
+			<h2>Ari Ben-Elazar</h2>
+			<h2 id="info">Your neighborhood dev</h2>
+			<h2 id="about-section">
+					<p>// Tutor</p>
+					<p>// Chess Player</p>
+			</h2>
+		</div>
+	</div>
+	<!-- /container -->
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js'></script>
+	<script>
+		$("#about").click(function () {
+			$("#info").fadeOut("slow");
+			$("#about-section:hidden").fadeIn("slow")
+		});
+	</script>
 
-    <script src="js/index.js"></script>
+	<script src="js/index.js"></script>
 
 </body>
+
 </html>

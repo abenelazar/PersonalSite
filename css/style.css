@@ -38,36 +38,6 @@ a:hover {
   color: #fff;
 }
 
-/* Header Style */
-.codrops-top {
-  text-transform: uppercase;
-  position: relative;
-  z-index: 1000;
-  font-size: 0.68em;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  line-height: 2.2;
-}
-
-.codrops-top a {
-  padding: 0 1em;
-  letter-spacing: 0.1em;
-  color: rgba(255, 255, 255, 0.2);
-  display: inline-block;
-}
-
-.codrops-top a:hover {
-  color: rgba(255, 255, 255, 0.9);
-}
-
-.codrops-top span.right {
-  float: right;
-}
-
-.codrops-top span.right a {
-  float: left;
-  display: block;
-}
-
 .os-phrases h2 {
   font-family: 'Dosis', 'Lato', sans-serif;
   font-size: 70px;
@@ -113,11 +83,6 @@ a:hover {
   margin: 0 15px;
 }
 
-.os-phrases h2 > span > span {
-  display: inline-block;
-  perspective: 4000px;
-  transform-origin: 50% 50%;
-}
 
 .os-phrases h2 > span > span > span {
   display: inline-block;
@@ -144,7 +109,7 @@ a:hover {
   100% {
     text-shadow: 0 0 10px #fff;
     opacity: 0;
-    transform: translateZ(130px);
+    transform: translateZ(160px);
     pointer-events: none;
   }
 }
@@ -162,7 +127,7 @@ a:hover {
   85% {
     text-shadow: 0 0 1px #fff;
     opacity: 0.8;
-    transform: rotateY(0deg) translateZ(100px);
+    transform: rotateY(deg) translateZ(100px);
   }
 
   100% {
@@ -202,11 +167,20 @@ a:hover {
   }
 }
 .os-phrases h2:nth-child(2) > span > span > span {
-  animation: FadeIn 3s linear 3s forwards;
+  animation: FadeIn 3s linear 2s forwards;
 }
 
 .os-phrases h2:nth-child(3) > span > span > span {
-  animation: Info 1s linear 6s forwards;
+  animation: Info 1s linear 4s forwards;
+}
+
+.os-phrases h2:nth-child(4) > span > span > span {
+  animation: none;
+  display: none;
+}
+.os-phrases h2:nth-child(5) > span > span > span {
+  animation: none;
+  display: none;
 }
 
 @keyframes FadeIn {
@@ -234,12 +208,12 @@ a:hover {
     opacity: 0.0;
     text-shadow: 0 0 1px #fff;
     transform: rotateY(0deg);
-    transform: translateY(-350px);
+    transform: translateY(-390px);
   }
   100% {
     opacity: 1;
     text-shadow: 0 0 0px #fff;
-    transform: translateY(-350px);
+    transform: translateY(-390px);
   }
 }
 

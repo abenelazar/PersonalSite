@@ -174,12 +174,16 @@ a:hover {
   animation: Info 1s linear 4s forwards;
 }
 
-.os-phrases h2:nth-child(4) > span > span > span {
-  animation: none;
+
+.os-phrases #contact-section {
   display: none;
 }
-.os-phrases h2:nth-child(5) > span > span > span {
-  animation: none;
+
+.os-phrases #about-section {
+  display: none;
+}
+
+.os-phrases #good-bye {
   display: none;
 }
 
